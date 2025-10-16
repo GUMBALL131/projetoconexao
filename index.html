@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Zé Cocoricó - Cadastro</title>
+ <!-- CSS principal e CSS específico do formulário -->
+ <link rel="stylesheet" href="style.css">
+ <link rel="stylesheet" href="estiloformulario.css">
+</head>
+<body id="formulario">
+ <!-- CABEÇALHO DO SITE -->
+ <header>
+ <div class="logo-topo">
+ <img src="./img/frangologo.webp" alt="Logo Zé Cocoricó">
+ </div>
+ <div class="texto-topo">
+ <h1><span class="ze">Zé</span> Cocoricó</h1>
+ </div>
+ </header>
+ <!-- MENU FIXO DE NAVEGAÇÃO -->
+ <nav>
+ <ul>
+ <li><a href="index.html">Home</a></li>
+ <li><a href="cadastro.html">Cadastro</a></li>
+ <li><a href="login.html">Login</a></li>
+ <li><a href="receitas.html">Receitas</a></li>
+ </ul>
+ </nav>
+ <!-- CONTEÚDO PRINCIPAL -->
+ <main>
+ <!-- COLUNA LATERAL ESQUERDA -->
+ <div class="coluna-esquerda">
+ <ul>
+ <li><a href="#">Frango Assado</a></li>
+ <li><a href="#">Strogonoff</a></li>
+ <li><a href="#">Coxa Crocante</a></li>
+ <li><a href="#">Peito Recheado</a></li>
+ <li><a href="#">Molhos</a></li>
+ <li><a href="#">Acompanhamentos</a></li>
+ </ul>
+ </div>
+ <!-- Formulário de cadastro -->
+ <form id="cad-formulario" action="cadastro.php" method="POST">
+ <fieldset>
+ <legend>Cadastro</legend>
+ <!-- Campos de entrada com placeholders -->
+ <input placeholder="Nome Completo" type="text" name="nome" id="nome" required>
+ <input placeholder="Digite seu Melhor e-mail" type="email" name="email" id="email"
+required>
+ <input placeholder="Digite uma senha" type="password" name="senha" id="senha"
+required>
+ <input placeholder="Digite Seu Endereço" type="text" name="endereco" id="endereco"
+required>
+ <input placeholder="Digite um CPF válido" type="text" name="cpf" id="cpf" required>
+ <input placeholder="Digite seu CEP" type="text" name="cep" id="cep" required>
+ <!-- Botão de envio -->
+ <button type="submit">Cadastrar</button>
+ </fieldset>
+ </form>
+ <!-- COLUNA DIREITA (PROMOÇÕES) -->
+ <div class="coluna-direita">
+ <div class="promo"><img src="./img/primo01.webp" alt="Promoção 1"></div>
+ <div class="promo"><img src="./img/promo02.png" alt="Promoção 2"></div>
+ <div class="promo"><img src="./img/promo03.webp" alt="Promoção 3"></div>
+ </div>
+ </main>
+</body>
+</html>

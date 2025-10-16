@@ -1,0 +1,86 @@
+/* ==============================
+ ÁREA DO FORMULÁRIO DE CADASTRO
+ ============================== */
+ main{
+
+ padding-bottom: 80px;
+ }
+/* Define o layout principal do formulário */
+#cad-formulario {
+ display: flex; /* Coloca o formulário centralizado horizontalmente */
+ justify-content: center; /* Centraliza o fieldset */
+ width: 100%; /* Ocupa toda a largura disponível */
+ /* margin-top: 100px; Espaço para o menu fixo no topo */
+}
+/* Define o estilo do campo de agrupamento dos inputs */
+#cad-formulario fieldset {
+ background-image: url(./img/FUNDOCADASTRO.webp); /* Fundo com imagem */
+ background-size: cover; /* Faz a imagem ocupar todo o espaço */
+ background-position: center; /* Centraliza a imagem */
+ border-radius: 15px; /* Bordas arredondadas */
+ width: 600px; /* Largura fixa do formulário */
+ min-height: 480px; /* Altura mínima */
+ padding: 30px 15px; /* Espaçamento interno */
+ text-align: center; /* Centraliza o conteúdo */
+ color: #fff8e7; /* Cor do texto clara */
+ border: none; /* Remove borda padrão */
+ box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3); /* Adiciona sombra para destacar */
+ backdrop-filter: blur(3px); /* Leve desfoque para destacar o conteúdo */
+}
+/* Legenda do formulário (título "Cadastro") */
+#cad-formulario legend {
+ background: #e67e22; /* Fundo laranja vibrante */
+ color: white; /* Texto branco */
+ padding: 10px 20px;
+ border-radius: 10px;
+ font-weight: bold;
+ box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+/* Estilo dos campos de entrada (input) */
+#cad-formulario input {
+ width: 90%; /* Preenche quase toda a largura do formulário */
+ border-radius: 15px; /* Bordas arredondadas */
+ height: 45px; /* Altura do campo */
+ margin: 15px 0; /* Espaçamento entre os campos */
+ padding: 8px;
+ border: none; /* Remove a borda padrão */
+ text-align: center; /* Texto centralizado */
+ transition: 0.3s; /* Transição suave em efeitos de foco */
+ box-shadow: 0 0 5px rgba(255, 165, 0, 0.2); /* Leve destaque */
+}
+/* Efeito visual ao clicar no campo */
+#cad-formulario input:focus {
+ outline: none; /* Remove a borda azul padrão */
+ box-shadow: 0 0 10px rgba(255, 165, 0, 0.6); /* Brilho ao focar */
+}
+/* Estilo do botão de envio */
+#cad-formulario button {
+ width: 60%;
+ padding: 20px;
+ margin-top: 45px;
+ border-radius: 15px;
+ background: #e67e22; /* Cor principal */
+ color: white;
+ border: none;
+ font-weight: bold;
+ cursor: pointer;
+ transition: 0.3s;
+}
+/* Efeito ao passar o mouse no botão */
+#cad-formulario button:hover {
+ background: #cf6d17; /* Escurece levemente */
+ transform: scale(1.05); /* Leve aumento */
+ box-shadow: 0 0 10px rgba(230, 126, 34, 0.8); /* Brilho */
+}
+/* ==============================
+ RESPONSIVIDADE
+ ============================== */
+@media (max-width: 600px) {
+ #cad-formulario fieldset {
+ width: 90%; /* Ajusta largura para telas pequenas */
+ padding: 20px;
+ }
+ #cad-formulario input {
+ font-size: 0.9em;
+ }
+}

@@ -1,0 +1,206 @@
+/* ==============================
+ CONFIGURAÇÕES GERAIS
+ ============================== */
+/* O seletor universal (*) aplica o estilo a todos os elementos da página */
+* {
+ margin: 0; /* Remove as margens padrão dos elementos */
+ padding: 0; /* Remove o espaçamento interno padrão */
+ font-family: Verdana, Geneva, Tahoma, sans-serif; /* Define uma fonte padrão legível */
+ box-sizing: border-box; /* Faz com que o padding e a borda sejam incluídos no tamanho
+total do elemento */
+ /* border: 1px solid; Linha usada apenas para depuração, mostra as bordas dos elementos
+*/
+}
+/* Estilos gerais do corpo da página */
+body {
+ background: linear-gradient(to bottom, #fffaf0, #fff); /* Cria um degradê suave do topo ao
+rodapé */
+ color: #333; /* Define a cor do texto padrão como cinza escuro */
+}
+/* ==============================
+ CABEÇALHO (HEADER)
+ ============================== */
+header {
+ display: flex; /* Usa Flexbox para organizar os elementos em linha (logo e texto) */
+ align-items: center; /* Centraliza os itens verticalmente */
+ justify-content: center; /* Centraliza horizontalmente o conteúdo */
+ padding: 20px; /* Espaçamento interno em volta do conteúdo */
+ margin-top: 30px; /* Espaço acima do cabeçalho */
+ background-color: #fff7e6; /* Fundo claro para destacar o topo */
+ box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Adiciona sombra suave abaixo do cabeçalho */
+}
+/* Container da logo */
+.logo-topo {
+ width: 120px; /* Define a largura da área da logo */
+}
+/* Imagem da logo */
+.logo-topo img {
+ width: 100%; /* Faz a imagem ocupar toda a largura do container */
+ border-radius: 75px; /* Deixa a imagem com bordas arredondadas (circular) */
+}
+/* Texto ao lado da logo */
+.texto-topo {
+ margin-left: 20px; /* Espaço entre a logo e o texto */
+ text-align: center; /* Centraliza o texto dentro do container */
+}
+/* Estilo do título principal */
+.texto-topo h1 {
+ font-size: 2.5em; /* Tamanho grande para o título */
+ color: #444; /* Cor cinza escuro */
+}
+/* Destaque no nome "Zé" dentro do título */
+.ze {
+ color: orange; /* Muda a cor para laranja */
+ font-weight: bold; /* Deixa em negrito */
+}
+/* ==============================
+ MENU DE NAVEGAÇÃO
+ ============================== */
+nav {
+ position: fixed; /* Mantém o menu fixo no topo da tela mesmo ao rolar a página */
+ top: 0; /* Posiciona no topo */
+ width: 100%; /* Ocupa toda a largura da tela */
+ background: orange; /* Fundo laranja */
+ display: flex; /* Usa Flexbox para alinhar os itens */
+ justify-content: center; /* Centraliza os links do menu */
+ box-shadow: 0 3px 8px rgba(0,0,0,0.2); /* Sombra abaixo do menu */
+ z-index: 100; /* Garante que o menu fique acima dos outros elementos */
+}
+/* Lista do menu */
+nav ul {
+ display: flex; /* Deixa os itens lado a lado */
+ flex-wrap: wrap; /* Permite que quebrem linha em telas pequenas */
+ justify-content: center; /* Centraliza os itens */
+}
+/* Cada item da lista */
+nav li {
+ list-style-type: none; /* Remove os marcadores da lista (bolinhas) */
+ margin: 8px; /* Espaçamento entre os itens */
+}
+/* Links dentro do menu */
+nav a {
+ text-decoration: none; /* Remove o sublinhado */
+ color: #fff; /* Cor do texto branca */
+ font-weight: bold; /* Negrito */
+ padding: 10px 15px; /* Espaçamento interno (clique maior) */
+ transition: 0.3s; /* Efeito suave ao mudar cor ou fundo */
+}
+/* Efeito ao passar o mouse sobre o link */
+nav a:hover {
+ background-color: #fff; /* Fundo branco */
+ color: orange; /* Texto laranja */
+ border-radius: 5px; /* Bordas arredondadas */
+}
+/* ==============================
+ CONTEÚDO PRINCIPAL (MAIN)
+ ============================== */
+main {
+ display: flex; /* Divide o conteúdo principal em colunas */
+ justify-content: space-between; /* Espaça as colunas igualmente */
+ padding: 30px 20px 20px 20px; /* Espaço interno para evitar sobreposição do menu fixo */
+ gap: 20px; /* Espaço entre as colunas */
+}
+/* ==============================
+ COLUNA ESQUERDA
+ ============================== */
+.coluna-esquerda {
+ width: 20%; /* Ocupa 20% da largura total */
+ background: #ffce73; /* Fundo amarelo claro */
+ padding: 10px; /* Espaçamento interno */
+ border-radius: 10px; /* Bordas arredondadas */
+}
+/* Itens da coluna esquerda (ex: menu lateral) */
+.coluna-esquerda li {
+ text-align: center; /* Centraliza o texto */
+ list-style-type: none; /* Remove marcadores */
+ background: #f6b93b; /* Fundo amarelo médio */
+ margin: 5px 0; /* Espaço entre itens */
+ padding: 8px; /* Espaçamento interno */
+ border-radius: 5px; /* Bordas arredondadas */
+ transition: 0.3s; /* Efeito suave ao passar o mouse */
+}
+/* Efeito hover nos itens da coluna */
+.coluna-esquerda li:hover {
+ background: #f39c12; /* Fundo laranja mais escuro */
+}
+/* Links dentro da coluna esquerda */
+.coluna-esquerda a {
+ text-decoration: none; /* Remove o sublinhado */
+ color: white; /* Texto branco */
+ font-weight: bold; /* Negrito */
+}
+/* ==============================
+ CONTEÚDO CENTRAL (PRINCIPAL)
+ ============================== */
+.principal {
+ width: 60%; /* Ocupa 60% da área central */
+ background: white; /* Fundo branco */
+ padding: 20px; /* Espaçamento interno */
+ border-radius: 10px; /* Bordas arredondadas */
+ box-shadow: 0 0 10px rgba(0,0,0,0.1); /* Sombra leve em volta */
+}
+/* Títulos dentro do conteúdo central */
+.principal h2 {
+ color: #e67e22; /* Cor laranja */
+ margin-bottom: 15px; /* Espaço abaixo do título */
+}
+/* Imagem principal dentro do conteúdo */
+.img-conteudo {
+ width: 100%; /* Ocupa toda a largura */
+ text-align: center; /* Centraliza a imagem */
+ margin: 20px 0; /* Espaçamento vertical */
+}
+/* Estilo da imagem */
+.img-conteudo img {
+ width: 90%; /* Ocupa 90% da largura da coluna */
+ border-radius: 10px; /* Bordas arredondadas */
+ transition: 0.5s; /* Transição suave ao aplicar o efeito hover */
+}
+/* Efeito de zoom ao passar o mouse na imagem */
+.img-conteudo img:hover {
+ transform: scale(1.05); /* Aumenta levemente a imagem (5%) */
+}
+/* ==============================
+ COLUNA DIREITA (PROMOÇÕES)
+ ============================== */
+.coluna-direita {
+ width: 20%; /* Ocupa 20% da largura total */
+ display: flex; /* Usa flexbox */
+ flex-direction: column; /* Organiza as promoções em coluna */
+ gap: 15px; /* Espaço entre as imagens de promoção */
+}
+/* Cada item de promoção */
+.promo {
+ width: 100%; /* Ocupa toda a largura da coluna */
+ transition: 0.4s; /* Transição suave para efeitos */
+}
+/* Imagens das promoções */
+.promo img {
+ width: 100%; /* Imagem ocupa toda a largura disponível */
+ border-radius: 10px; /* Bordas arredondadas */
+ box-shadow: 0 0 8px rgba(0,0,0,0.2); /* Sombra leve */
+ transition: 0.4s; /* Efeito de transição */
+}
+/* Efeito hover nas promoções */
+.promo img:hover {
+ transform: scale(1.05); /* Zoom leve na imagem */
+}
+/* ==============================
+ RESPONSIVIDADE SIMPLES
+ ============================== */
+@media (max-width: 900px) {
+ /* Quando a tela for menor que 900px */
+ main {
+ flex-direction: column; /* Empilha as colunas (verticalmente) */
+ }
+ .coluna-esquerda, .coluna-direita, .principal {
+ width: 100%; /* Faz cada seção ocupar toda a largura */
+ }
+ nav ul {
+ flex-direction: column; /* Deixa o menu empilhado */
+ }
+ nav a {
+ display: block; /* Cada link ocupa uma linha inteira */
+ text-align: center; /* Centraliza o texto */
+ }
+}
